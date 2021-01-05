@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  width: 80%;
+  padding: 0px 5px;
+  margin: auto;
+  position: relative;
+}
+.card {
+  padding: 3px 10px;
+  margin: 10px 0px;
+  min-height: 100px;
+  box-shadow: 1px 1px 4px 1px darkgray;
+}
+nav {
+  width: 80%;
+  padding: 0px 10%;
+  background: black;
+  display: flex;
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      margin: 0px 10px;
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: rgb(207, 207, 207);
+        }
+      }
+    }
+  }
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.post {
+  h2 {
+    color: rgb(73, 72, 72);
+    cursor: pointer;
+  }
+  p {
+    text-align: justify;
+  }
+  .del {
+    width: 20px;
+    height: 22px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    float: right;
+    border-radius: 100%;
+    background: rgb(146, 144, 144);
+    cursor: pointer;
+  }
+}
+.singlePost {
+  width: 80%;
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  z-index: 99;
+  background-color: white;
+}
+
+.admin {
+  display: flex;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  .adminPostForm {
+    width: 400px;
+    padding: 10px;
+    flex: 1;
+
+    form {
+      justify-self: start;
+      display: grid;
+      input {
+        height: 20px;
+        margin: 2px 0px;
+        border: 1px solid darkgray;
+      }
+      textarea {
+        margin: 5px 0px;
+        border: 1px solid darkgray;
+      }
+    }
+  }
+  div {
+    flex: 2;
+  }
+}
+
+.commentForm {
+  width: 100%;
+  display: flex;
+  input {
+    flex: 4;
+    border: none;
+    border-bottom: 1px solid darkgray;
+  }
+  button {
+    flex: 0.1;
+  }
+}

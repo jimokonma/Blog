@@ -1,13 +1,150 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 80%;
+  padding: 0px 5px;
+  margin: auto;
+  position: relative;
 }
+
+.card {
+  padding: 3px 10px;
+  margin: 10px 0px;
+  min-height: 100px;
+  -webkit-box-shadow: 1px 1px 4px 1px darkgray;
+          box-shadow: 1px 1px 4px 1px darkgray;
+}
+
+nav {
+  width: 80%;
+  padding: 0px 10%;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #cfcfcf;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.post h2 {
+  color: #494848;
+  cursor: pointer;
+}
+
+.post p {
+  text-align: justify;
+}
+
+.post .del {
+  width: 20px;
+  height: 22px;
+  text-align: center;
+  color: white;
+  float: right;
+  border-radius: 100%;
+  background: #929090;
+  cursor: pointer;
+}
+
+.singlePost {
+  width: 80%;
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  z-index: 99;
+  background-color: white;
+}
+
+.admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+}
+
+.admin .adminPostForm {
+  width: 400px;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.admin .adminPostForm form {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  display: -ms-grid;
+  display: grid;
+}
+
+.admin .adminPostForm form input {
+  height: 20px;
+  margin: 2px 0px;
+  border: 1px solid darkgray;
+}
+
+.admin .adminPostForm form textarea {
+  margin: 5px 0px;
+  border: 1px solid darkgray;
+}
+
+.admin div {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.commentForm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.commentForm input {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  border: none;
+  border-bottom: 1px solid darkgray;
+}
+
+.commentForm button {
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1;
+          flex: 0.1;
+}
+/*# sourceMappingURL=index.css.map */
